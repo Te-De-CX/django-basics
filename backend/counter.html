@@ -1,0 +1,4 @@
+<h2>List of posts</h2>
+{% for post in posts %}
+<a href="{% url 'post' post %}">{{post}}</a>
+{% endfor %}

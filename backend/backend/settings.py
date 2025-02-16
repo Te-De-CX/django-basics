@@ -82,6 +82,22 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'the name of the database you created',
+#         'USER':"postgres",
+#         'PASSWORD':"your password",
+#         'HOST':"localhost",
+#     }
+# }
+
+# in your command prompt
+# pip install psycopg2
+# pip install Pillow
+# python manage.py makemigrations
+# python manage.py migrate
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

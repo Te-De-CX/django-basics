@@ -131,9 +131,16 @@
               <h4 class="title"><a href="">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
-          </div><!--End Icon Box -->
-
-        </div>
+          </div><!-- End Icon Box -->
+          {% for feature in features %}
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-easel"></i></div>
+              <h4 class="title"><a href="">{{ feature.name }}</a></h4>
+              <p class="description">{{ feature.details }}</p>
+            </div>
+        </div><!--End Icon Box -->
+        {% endfor %}
       </div>
 
     </section><!-- /Hero Section -->
